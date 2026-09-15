@@ -1,1 +1,7 @@
 .DS_Store
+
+# Installers are too large for a normal git push (GitHub's 100MB hard limit) —
+# host these as GitHub Release assets instead, not as tracked repo files.
+*.dmg
+*.exe
+*.AppImage

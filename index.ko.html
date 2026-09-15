@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>orderer — 작고 빠른 데스크톱 API 클라이언트</title>
-<meta name="description" content="orderer는 HTTP, WebSocket, gRPC 요청을 위한 37MB짜리 데스크톱 앱입니다. 계정 없음, 클라우드 없음, 미리 설치할 것 없음.">
+<title>hostman — 작고 빠른 데스크톱 API 클라이언트</title>
+<meta name="description" content="hostman는 HTTP, WebSocket, gRPC 요청을 위한 37MB짜리 데스크톱 앱입니다. 계정 없음, 클라우드 없음, 미리 설치할 것 없음.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.85em%22 font-size=%2288%22>%F0%9F%94%8C</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -479,12 +479,12 @@
 
 <div class="wrap">
   <div class="topbar">
-    <div class="wordmark">orderer</div>
+    <div class="wordmark">hostman</div>
     <nav class="topnav">
       <a href="#protocols">프로토콜</a>
       <a href="#compare">비교</a>
       <a href="#install">설치</a>
-      <a href="https://github.com/donghquinn/orderer">github ↗</a>
+      <a href="https://github.com/donghquinn/hostman">github ↗</a>
       <span class="lang-switch"><a href="index.html">EN</a> · <a class="current" href="index.ko.html">한국어</a></span>
     </nav>
   </div>
@@ -494,17 +494,17 @@
   <div class="hero-head">
     <span class="kicker">로컬 API 클라이언트</span>
     <h1>보낸다.<br>돌아온 걸 본다.<br>남겨 둔다.</h1>
-    <p class="lede">orderer는 HTTP, WebSocket, gRPC 요청을 위한 37&nbsp;MB짜리 데스크톱 앱입니다. 계정 없음, 클라우드 없음, 미리 설치할 것 없음.</p>
+    <p class="lede">hostman는 HTTP, WebSocket, gRPC 요청을 위한 37&nbsp;MB짜리 데스크톱 앱입니다. 계정 없음, 클라우드 없음, 미리 설치할 것 없음.</p>
     <div class="hero-ctas">
-      <a class="btn btn-primary" href="#install">orderer 받기</a>
-      <a class="btn btn-ghost" href="https://github.com/donghquinn/orderer">소스 보기</a>
+      <a class="btn btn-primary" href="#install">hostman 받기</a>
+      <a class="btn btn-ghost" href="https://github.com/donghquinn/hostman">소스 보기</a>
     </div>
   </div>
 
   <div class="mockwin">
     <div class="mockwin-title">
       <div class="dots"><span></span><span></span><span></span></div>
-      <span class="name">orderer</span>
+      <span class="name">hostman</span>
       <div class="tabs-right"><span>환경</span><span>☀</span></div>
     </div>
     <div class="mockwin-body">
@@ -550,7 +550,7 @@
     <div class="section-head">
       <span class="kicker">무엇을 하는 도구인가</span>
       <h2>세 가지 프로토콜, 하나의 창</h2>
-      <p>누군가 API를 알려줬다면, orderer로 그 API를 호출하고 돌아온 내용을 그대로 확인하고, 쓸 만한 요청은 저장해 두었다가 나중에 다시 찾아 쓸 수 있습니다.</p>
+      <p>누군가 API를 알려줬다면, hostman로 그 API를 호출하고 돌아온 내용을 그대로 확인하고, 쓸 만한 요청은 저장해 두었다가 나중에 다시 찾아 쓸 수 있습니다.</p>
     </div>
     <div class="proto-grid">
       <div class="proto-card">
@@ -577,7 +577,7 @@
     <div class="section-head">
       <span class="kicker">postman을 두고 왜 이걸 쓰나</span>
       <h2>API 클라이언트를 여는 이유는 대개 하나입니다</h2>
-      <p>요청을 보내고 응답을 보는 것. 그게 전부라면 큰 소프트웨어를 켜서 그중 일부만 쓰고 있는 셈입니다. orderer는 거기서 그 일부만 남긴 것입니다.</p>
+      <p>요청을 보내고 응답을 보는 것. 그게 전부라면 큰 소프트웨어를 켜서 그중 일부만 쓰고 있는 셈입니다. hostman는 거기서 그 일부만 남긴 것입니다.</p>
     </div>
     <div class="feat-grid">
       <div class="feat">
@@ -590,7 +590,7 @@
       </div>
       <div class="feat">
         <h3>그냥 파일입니다</h3>
-        <p>컬렉션은 <code>~/.orderer/collections/</code>에 읽을 수 있는 JSON으로 저장됩니다. Git에 넣고, diff로 보고, 첨부 파일로 보낼 수 있습니다.</p>
+        <p>컬렉션은 <code>~/.hostman/collections/</code>에 읽을 수 있는 JSON으로 저장됩니다. Git에 넣고, diff로 보고, 첨부 파일로 보낼 수 있습니다.</p>
       </div>
       <div class="feat">
         <h3>유료 기능 뒤에 숨은 것이 없습니다</h3>
@@ -626,8 +626,8 @@
     </div>
     <div class="limits-note">
       <span class="kicker">솔직한 말</span>
-      <p>이 도구가 내 일에 맞는지 1분 안에 판단할 수 있도록 솔직하게 적었습니다. 위 항목 중 하나라도 필요하다면 orderer는 맞지 않는 도구이며, Postman이나 Bruno가 더 나을 것입니다.</p>
-      <p>Windows와 Linux 빌드는 아직 macOS만큼 검증되지 않았습니다. orderer는 애플 공증도 받지 않아 macOS에서 처음 실행할 때 경고가 뜨는데, 이는 유료 프로그램을 거치지 않은 모든 앱에 나타나는 현상일 뿐입니다.</p>
+      <p>이 도구가 내 일에 맞는지 1분 안에 판단할 수 있도록 솔직하게 적었습니다. 위 항목 중 하나라도 필요하다면 hostman는 맞지 않는 도구이며, Postman이나 Bruno가 더 나을 것입니다.</p>
+      <p>Windows와 Linux 빌드는 아직 macOS만큼 검증되지 않았습니다. hostman는 애플 공증도 받지 않아 macOS에서 처음 실행할 때 경고가 뜨는데, 이는 유료 프로그램을 거치지 않은 모든 앱에 나타나는 현상일 뿐입니다.</p>
     </div>
   </div>
 </section>
@@ -636,8 +636,8 @@
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">비교</span>
-      <h2>orderer가 있는 자리</h2>
-      <p>orderer의 자리는 일부러 좁게 잡았습니다. HTTP, WebSocket, gRPC 요청을 제대로 보내고 그 답을 기억하는, 가능한 한 작은 도구입니다.</p>
+      <h2>hostman가 있는 자리</h2>
+      <p>hostman의 자리는 일부러 좁게 잡았습니다. HTTP, WebSocket, gRPC 요청을 제대로 보내고 그 답을 기억하는, 가능한 한 작은 도구입니다.</p>
     </div>
     <div class="table-wrap">
       <table>
@@ -646,7 +646,7 @@
         </thead>
         <tbody>
           <tr class="self">
-            <td class="name">orderer</td>
+            <td class="name">hostman</td>
             <td>HTTP + WebSocket + gRPC, 의도적으로 좁은 범위</td>
             <td>없음, 영구히</td>
             <td>디스크의 일반 JSON 파일</td>
@@ -698,7 +698,7 @@
       <div class="install-card">
         <h3>macOS</h3>
         <div class="os-note">Apple Silicon 또는 Intel, Homebrew로 설치.</div>
-        <div class="codeblock"><span class="c1">brew</span> tap donghquinn/orderer<br><span class="c1">brew</span> install --cask orderer</div>
+        <div class="codeblock"><span class="c1">brew</span> tap donghquinn/hostman<br><span class="c1">brew</span> install --cask hostman</div>
       </div>
       <div class="install-card">
         <h3>Windows</h3>
@@ -708,7 +708,7 @@
       <div class="install-card">
         <h3>Linux</h3>
         <div class="os-note">AppImage를 지원하는 최신 리눅스 데스크톱.</div>
-        <div class="codeblock"><span class="c1">chmod</span> +x orderer.AppImage<br>./orderer.AppImage</div>
+        <div class="codeblock"><span class="c1">chmod</span> +x hostman.AppImage<br>./hostman.AppImage</div>
       </div>
     </div>
   </div>
@@ -721,9 +721,9 @@
       <span class="sep">·</span>
       <span>© 2026 Dong H. Kim</span>
       <div class="links">
-        <a href="https://github.com/donghquinn/orderer">GitHub</a>
-        <a href="https://github.com/donghquinn/orderer/releases">릴리스</a>
-        <a href="https://github.com/donghquinn/orderer/blob/main/documents/GUIDE.ko.md">사용 설명서</a>
+        <a href="https://github.com/donghquinn/hostman">GitHub</a>
+        <a href="https://github.com/donghquinn/hostman/releases">릴리스</a>
+        <a href="https://github.com/donghquinn/hostman/blob/main/documents/GUIDE.ko.md">사용 설명서</a>
       </div>
     </div>
   </footer>

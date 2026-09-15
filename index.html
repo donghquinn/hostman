@@ -142,12 +142,18 @@
     flex-wrap: wrap;
     gap: 12px;
   }
-  .wordmark {
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-weight: 800;
-    font-size: 1.4rem;
-    text-transform: lowercase;
-    letter-spacing: 0.01em;
+  .brandmark {
+    display: inline-flex;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    line-height: 0;
+  }
+  .brandmark img {
+    display: block;
+    height: 22px;
+    width: auto;
   }
   .topnav { display: flex; align-items: center; gap: 24px; font-size: 0.88rem; }
   .topnav a { color: var(--ink-soft); text-decoration: none; font-weight: 500; }
@@ -482,7 +488,7 @@
 
 <div class="wrap">
   <div class="topbar">
-    <div class="wordmark">hostman</div>
+    <div class="brandmark"><img src="hostman-logo.png" alt="hostman"></div>
     <nav class="topnav">
       <a href="#protocols">protocols</a>
       <a href="#compare">compare</a>

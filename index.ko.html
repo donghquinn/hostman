@@ -161,6 +161,21 @@
 
   /* ---------- Hero ---------- */
   .hero { padding-top: 40px; padding-bottom: 96px; }
+  .logo-banner { display: flex; justify-content: center; padding-bottom: 40px; }
+  .logo-banner .brandmark-lg {
+    display: inline-flex;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 20px 36px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 48px -24px rgba(0,0,0,0.35);
+    line-height: 0;
+  }
+  .logo-banner img {
+    display: block;
+    width: clamp(220px, 30vw, 380px);
+    height: auto;
+  }
   .hero-head { max-width: 760px; margin-bottom: 40px; }
   .hero-head .kicker { margin-bottom: 18px; }
   .hero h1 {
@@ -497,6 +512,10 @@
 </div>
 
 <div class="wrap hero">
+  <div class="logo-banner">
+    <div class="brandmark-lg"><img src="hostman-logo.png" alt="hostman"></div>
+  </div>
+
   <div class="hero-head">
     <span class="kicker">로컬 기반 API 클라이언트</span>
     <h1>요청하고. 확인하고. 저장하세요.<br>불필요한 클라우드 기능 없이.</h1>
@@ -709,12 +728,14 @@
       <div class="install-card">
         <h3>Windows</h3>
         <div class="os-note">Windows 10 이상. 미서명 빌드 (SmartScreen 경고가 한 번 표시될 수 있습니다).</div>
-        <div class="codeblock"><span class="c2"># Releases에서 →</span><br>설치 파일을 내려받고,<br><span class="c1">자세히 → 실행</span> 클릭</div>
+        <a class="btn btn-primary" href="hostman-Setup-1.0.0.exe" download style="margin-bottom: 16px; align-self: flex-start;">.exe 다운로드 — 93 MB</a>
+        <div class="codeblock"><span class="c2"># 다운로드 후 →</span><br><span class="c1">자세히 → 실행</span> 클릭</div>
       </div>
       <div class="install-card">
         <h3>Linux</h3>
         <div class="os-note">AppImage를 지원하는 주요 리눅스 배포판.</div>
-        <div class="codeblock"><span class="c1">chmod</span> +x hostman.AppImage<br>./hostman.AppImage</div>
+        <a class="btn btn-primary" href="hostman-1.0.0.AppImage" download style="margin-bottom: 16px; align-self: flex-start;">.AppImage 다운로드 — 122 MB</a>
+        <div class="codeblock"><span class="c1">chmod</span> +x hostman-1.0.0.AppImage<br>./hostman-1.0.0.AppImage</div>
       </div>
     </div>
   </div>

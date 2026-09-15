@@ -163,6 +163,21 @@
 
   /* ---------- Hero ---------- */
   .hero { padding-top: 40px; padding-bottom: 96px; }
+  .logo-banner { display: flex; justify-content: center; padding-bottom: 40px; }
+  .logo-banner .brandmark-lg {
+    display: inline-flex;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 20px 36px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 24px 48px -24px rgba(0,0,0,0.35);
+    line-height: 0;
+  }
+  .logo-banner img {
+    display: block;
+    width: clamp(220px, 30vw, 380px);
+    height: auto;
+  }
   .hero-head { max-width: 760px; margin-bottom: 40px; }
   .hero-head .kicker { margin-bottom: 18px; }
   .hero h1 {
@@ -500,6 +515,10 @@
 </div>
 
 <div class="wrap hero">
+  <div class="logo-banner">
+    <div class="brandmark-lg"><img src="hostman-logo.png" alt="hostman"></div>
+  </div>
+
   <div class="hero-head">
     <span class="kicker">local-first api client</span>
     <h1>Request. Inspect. Retain.<br>Without the cloud bloat.</h1>
@@ -712,12 +731,14 @@
       <div class="install-card">
         <h3>Windows</h3>
         <div class="os-note">Windows 10+. Unsigned — SmartScreen will warn once.</div>
-        <div class="codeblock"><span class="c2"># Releases →</span><br>download the installer,<br>then <span class="c1">More info → Run anyway</span></div>
+        <a class="btn btn-primary" href="hostman-Setup-1.0.0.exe" download style="margin-bottom: 16px; align-self: flex-start;">Download .exe — 93 MB</a>
+        <div class="codeblock"><span class="c2"># after downloading →</span><br><span class="c1">More info → Run anyway</span></div>
       </div>
       <div class="install-card">
         <h3>Linux</h3>
         <div class="os-note">Any current distribution supporting AppImage.</div>
-        <div class="codeblock"><span class="c1">chmod</span> +x hostman.AppImage<br>./hostman.AppImage</div>
+        <a class="btn btn-primary" href="hostman-1.0.0.AppImage" download style="margin-bottom: 16px; align-self: flex-start;">Download .AppImage — 122 MB</a>
+        <div class="codeblock"><span class="c1">chmod</span> +x hostman-1.0.0.AppImage<br>./hostman-1.0.0.AppImage</div>
       </div>
     </div>
   </div>

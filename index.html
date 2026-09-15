@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>hostman — a small, fast desktop API client</title>
-<meta name="description" content="hostman is a 37 MB desktop app for HTTP, WebSocket and gRPC requests. No account, no cloud, nothing to install first.">
+<title>hostman — Fast, Local-First Desktop API Client</title>
+<meta name="description" content="A lightweight desktop app for HTTP, WebSocket, and gRPC requests. Account-free, cloud-free, and instantly ready.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.85em%22 font-size=%2288%22>%F0%9F%94%8C</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -501,12 +501,11 @@
 
 <div class="wrap hero">
   <div class="hero-head">
-    <span class="kicker">local api client</span>
-    <h1>Send it.<br>See what comes back.<br>Keep it.</h1>
-    <p class="lede">hostman is a 37&nbsp;MB desktop app for HTTP, WebSocket and gRPC requests. No account, no cloud, nothing to install first.</p>
+    <span class="kicker">local-first api client</span>
+    <h1>Request. Inspect. Retain.<br>Without the cloud bloat.</h1>
+    <p class="lede">hostman is a fast, account-free desktop client for HTTP, WebSocket, and gRPC. No tracking, no cloud sync—just pure local execution.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="#install">Get hostman</a>
-      <a class="btn btn-ghost" href="https://github.com/donghquinn/hostman">View source</a>
     </div>
   </div>
 
@@ -540,14 +539,14 @@
           <div class="row"><span>limit</span><span>25</span></div>
         </div>
         <div class="mock-status">
-          <span class="ok">200 OK</span><span>84&nbsp;ms</span><span>1.2&nbsp;KB</span><span>HTTP/2</span><span>🔒 TLS 1.3</span>
+          <span class="ok">200 OK</span><span>84 ms</span><span>1.2 KB</span><span>HTTP/2</span><span>🔒 TLS 1.3</span>
         </div>
         <div class="mock-body"><span class="jp">{</span><br>
-&nbsp;&nbsp;<span class="jk">"users"</span><span class="jp">: [</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="jp">{</span> <span class="jk">"id"</span><span class="jp">:</span> <span class="jn">1</span><span class="jp">,</span> <span class="jk">"name"</span><span class="jp">:</span> <span class="js">"Ada Lovelace"</span><span class="jp">,</span> <span class="jk">"role"</span><span class="jp">:</span> <span class="js">"admin"</span> <span class="jp">},</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="jp">{</span> <span class="jk">"id"</span><span class="jp">:</span> <span class="jn">2</span><span class="jp">,</span> <span class="jk">"name"</span><span class="jp">:</span> <span class="js">"Grace Hopper"</span><span class="jp">,</span> <span class="jk">"role"</span><span class="jp">:</span> <span class="js">"editor"</span> <span class="jp">}</span><br>
-&nbsp;&nbsp;<span class="jp">],</span><br>
-&nbsp;&nbsp;<span class="jk">"page"</span><span class="jp">:</span> <span class="jn">2</span><span class="jp">,</span> <span class="jk">"total"</span><span class="jp">:</span> <span class="jn">214</span><br>
+  <span class="jk">"users"</span><span class="jp">: [</span><br>
+    <span class="jp">{</span> <span class="jk">"id"</span><span class="jp">:</span> <span class="jn">1</span><span class="jp">,</span> <span class="jk">"name"</span><span class="jp">:</span> <span class="js">"Ada Lovelace"</span><span class="jp">,</span> <span class="jk">"role"</span><span class="jp">:</span> <span class="js">"admin"</span> <span class="jp">},</span><br>
+    <span class="jp">{</span> <span class="jk">"id"</span><span class="jp">:</span> <span class="jn">2</span><span class="jp">,</span> <span class="jk">"name"</span><span class="jp">:</span> <span class="js">"Grace Hopper"</span><span class="jp">,</span> <span class="jk">"role"</span><span class="jp">:</span> <span class="js">"editor"</span> <span class="jp">}</span><br>
+  <span class="jp">],</span><br>
+  <span class="jk">"page"</span><span class="jp">:</span> <span class="jn">2</span><span class="jp">,</span> <span class="jk">"total"</span><span class="jp">:</span> <span class="jn">214</span><br>
 <span class="jp">}</span></div>
       </div>
     </div>
@@ -557,25 +556,25 @@
 <section id="protocols">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">what it's for</span>
+      <span class="kicker">supported protocols</span>
       <h2>Three protocols. One window.</h2>
-      <p>If someone has given you an API to work with, hostman lets you call it, see exactly what comes back, save the calls that turn out to be useful, and find them again later.</p>
+      <p>Call endpoints, inspect exact network responses, and organize your API requests locally with zero overhead.</p>
     </div>
     <div class="proto-grid">
       <div class="proto-card">
-        <span class="tag">HTTP</span>
-        <h3>The common one</h3>
-        <p>Fetching and sending data over the web: GET, POST, PUT, PATCH, DELETE and the rest, with JSON, form, file-upload and GraphQL bodies.</p>
+        <span class="tag">HTTP & REST</span>
+        <h3>Standard Web APIs</h3>
+        <p>Execute GET, POST, PUT, DELETE, and GraphQL queries with full support for JSON, Form Data, and binary uploads.</p>
       </div>
       <div class="proto-card">
         <span class="tag">WebSocket</span>
-        <h3>Stays open</h3>
-        <p>A connection that stays open, where messages arrive continuously — live prices, chat, notifications.</p>
+        <h3>Real-Time Streams</h3>
+        <p>Maintain persistent connections to send and inspect streaming messages, live feeds, and event sockets.</p>
       </div>
       <div class="proto-card">
         <span class="tag">gRPC</span>
-        <h3>Between servers</h3>
-        <p>A faster format often used between servers inside a company. Works from the server's own description or from .proto files, with no code generation.</p>
+        <h3>High-Performance RPCs</h3>
+        <p>Test microservice endpoints natively using .proto specs or server reflection without code generation.</p>
       </div>
     </div>
   </div>
@@ -584,34 +583,34 @@
 <section id="why">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">why not just use postman</span>
-      <h2>Most people open an API client to do one thing.</h2>
-      <p>Send a request and look at the response. If that's you, you're running a large piece of software to use a small part of it. hostman is what's left when you keep only that part.</p>
+      <span class="kicker">built for speed</span>
+      <h2>Everything you need to test APIs. Nothing else.</h2>
+      <p>Most API clients have morphed into heavy cloud platforms. hostman returns to the essentials: sending requests and inspecting responses rapidly on your local machine.</p>
     </div>
     <div class="feat-grid">
       <div class="feat">
-        <h3>Nothing to install first</h3>
-        <p>No account, no sign-up, nothing but the app itself. Under 200&nbsp;MB on disk.</p>
+        <h3>Instant Execution</h3>
+        <p>No account, no sign-up, no external dependencies. Lightweight footprint on disk.</p>
       </div>
       <div class="feat">
-        <h3>No account, ever</h3>
-        <p>There's no sign-in screen, because there's no server to sign in to. The app only talks to the servers you point it at.</p>
+        <h3>Zero Cloud Tracking</h3>
+        <p>There is no login screen or telemetry server. hostman communicates only with the endpoints you specify.</p>
       </div>
       <div class="feat">
-        <h3>Ordinary files</h3>
-        <p>Collections save as readable, indented JSON in <code>~/.hostman/collections/</code>. Put them in Git, diff them, email them.</p>
+        <h3>Git-Friendly Storage</h3>
+        <p>Collections save as readable JSON under <code>~/.hostman/collections/</code>. Easily version control, diff, or share via repositories.</p>
       </div>
       <div class="feat">
-        <h3>Nothing behind a plan</h3>
-        <p>No paid tier, no request cap, no seat count. The whole app is what you get.</p>
+        <h3>No Paywalls</h3>
+        <p>No paid tiers, request caps, or team limits. Access all features out of the box.</p>
       </div>
       <div class="feat">
-        <h3>All three, one place</h3>
-        <p>HTTP, WebSocket and gRPC as three tabs in the same window, sharing variables, collections and history.</p>
+        <h3>Unified Interface</h3>
+        <p>Manage HTTP, WebSocket, and gRPC in side-by-side tabs while sharing environment variables and history.</p>
       </div>
       <div class="feat">
-        <h3>Answers when it's slow</h3>
-        <p>Every response breaks timing into DNS, connect, TLS handshake, TTFB and download — plus TLS version, cipher and cert expiry.</p>
+        <h3>Detailed Timing Breakdown</h3>
+        <p>Pinpoint bottlenecks with granular timing metrics: DNS, TCP connect, TLS handshake, TTFB, and download duration.</p>
       </div>
     </div>
   </div>
@@ -620,23 +619,23 @@
 <section id="limits">
   <div class="wrap limits-wrap">
     <div class="limits-head">
-      <span class="kicker">404 not found</span>
-      <h2>What it deliberately doesn't do</h2>
+      <span class="kicker">focused scope</span>
+      <h2>What hostman deliberately leaves out</h2>
       <ul class="limits-list">
-        <li><span class="code">—</span><span><strong>Test scripting.</strong> No code before or after a request, no pass/fail checks.</span></li>
-        <li><span class="code">—</span><span><strong>Collection runner.</strong> Requests go one at a time, by hand — no CI integration.</span></li>
-        <li><span class="code">—</span><span><strong>Mocks, monitors, docs.</strong> None of the platform features around the request itself.</span></li>
-        <li><span class="code">—</span><span><strong>Team collaboration.</strong> Sharing means sending someone a file.</span></li>
-        <li><span class="code">—</span><span><strong>OAuth 2.0 flow.</strong> Bearer, Basic and API keys work; get the token elsewhere and paste it in.</span></li>
-        <li><span class="code">—</span><span><strong>Cookie jar.</strong> Cookies are shown, not stored or replayed automatically.</span></li>
-        <li><span class="code">—</span><span><strong>Request chaining.</strong> Copy a token into an environment variable yourself.</span></li>
-        <li><span class="code">—</span><span><strong>Code generation.</strong> No curl command, no snippet, on request.</span></li>
+        <li><span class="code">—</span><span><strong>Test scripting.</strong> No custom script execution hooks before or after requests.</span></li>
+        <li><span class="code">—</span><span><strong>Collection runner.</strong> Requests run manually one at a time, without automated batch execution.</span></li>
+        <li><span class="code">—</span><span><strong>Mocks & Monitors.</strong> Excludes platform extras like hosted mock servers or uptime monitoring.</span></li>
+        <li><span class="code">—</span><span><strong>Cloud Collaboration.</strong> Team sharing relies on standard Git workflows and local files.</span></li>
+        <li><span class="code">—</span><span><strong>Automated OAuth2 Flow.</strong> Paste Bearer tokens or API keys directly into settings.</span></li>
+        <li><span class="code">—</span><span><strong>Automatic Cookie Jar.</strong> Response cookies are displayed clearly but not stored across sessions.</span></li>
+        <li><span class="code">—</span><span><strong>Dynamic Request Chaining.</strong> Transfer variables manually or via environment presets.</span></li>
+        <li><span class="code">—</span><span><strong>Code Generator.</strong> Keeps the interface clean by focusing on active client execution.</span></li>
       </ul>
     </div>
     <div class="limits-note">
-      <span class="kicker">honest note</span>
-      <p>An honest list, so you can tell in one minute whether this fits your work. If you need any of the above, hostman is the wrong tool — Postman or Bruno will serve you better.</p>
-      <p>Windows and Linux builds are newer than macOS and haven't seen the same mileage yet. hostman isn't notarised by Apple either, so macOS shows a first-launch warning — that's a paid Apple program, not a statement about the app.</p>
+      <span class="kicker">design philosophy</span>
+      <p>If your workflow depends on automated CI test runners, cloud team workspaces, or complex auth flows, tools like Postman or Bruno are better suited.</p>
+      <p>hostman is built strictly for rapid, manual request inspection with zero overhead.</p>
     </div>
   </div>
 </section>
@@ -644,9 +643,9 @@
 <section id="compare">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">compare</span>
+      <span class="kicker">comparison</span>
       <h2>Where it sits</h2>
-      <p>hostman's niche is narrow on purpose: the smallest thing that can send an HTTP, WebSocket or gRPC request properly and remember the answer.</p>
+      <p>hostman's niche is narrow on purpose: the lightweight, local-first client for sending HTTP, WebSocket, or gRPC requests and inspecting responses.</p>
     </div>
     <div class="table-wrap">
       <table>
@@ -656,39 +655,39 @@
         <tbody>
           <tr class="self">
             <td class="name">hostman</td>
-            <td>HTTP + WebSocket + gRPC, deliberately narrow</td>
+            <td>HTTP + WebSocket + gRPC (Core testing focus)</td>
             <td>None, ever</td>
             <td>Plain JSON files on disk</td>
           </tr>
           <tr>
             <td class="name">Postman</td>
-            <td>Everything — mocks, monitors, docs, team workspaces</td>
-            <td>Required, cloud sync</td>
-            <td>Proprietary, synced</td>
+            <td>Full API platform (Mocks, docs, CI pipelines)</td>
+            <td>Required (Cloud sync)</td>
+            <td>Proprietary cloud storage</td>
           </tr>
           <tr>
             <td class="name">Bruno</td>
-            <td>HTTP-first, closest in philosophy</td>
+            <td>HTTP-first desktop client</td>
             <td>None</td>
-            <td>Plain files, Git-friendly</td>
+            <td>Plain files (Git-friendly)</td>
           </tr>
           <tr>
             <td class="name">Insomnia</td>
-            <td>Comparable scope to Postman</td>
+            <td>API Client & Design platform</td>
             <td>Nudged over time</td>
-            <td>Proprietary, synced</td>
+            <td>Proprietary cloud sync</td>
           </tr>
           <tr>
             <td class="name">curl / HTTPie</td>
-            <td>Scriptable, no interface at all</td>
+            <td>CLI-based tool, scriptable</td>
             <td>None</td>
-            <td>Whatever you script</td>
+            <td>User scripts</td>
           </tr>
           <tr>
             <td class="name">Paw / RapidAPI</td>
-            <td>Native Mac app, polished</td>
+            <td>Native Mac API client</td>
             <td>None</td>
-            <td>Paid</td>
+            <td>Paid license</td>
           </tr>
         </tbody>
       </table>
@@ -701,13 +700,13 @@
     <div class="section-head">
       <span class="kicker">install</span>
       <h2>macOS, Windows, or Linux</h2>
-      <p>That's the entire requirements list. No Node.js, Python, Java, Docker, or account to set up first.</p>
+      <p>No Node.js, Python, Java, Docker, or account setup required.</p>
     </div>
     <div class="install-grid">
       <div class="install-card">
         <h3>macOS</h3>
-        <div class="os-note">Apple Silicon or Intel, universal binary. Unsigned — macOS will warn on first launch.</div>
-        <a class="btn btn-primary" href="hostman-1.0.0.dmg" download style="margin-bottom: 16px; align-self: flex-start;">Download .dmg — 198 MB</a>
+        <div class="os-note">Universal Binary (Intel & Apple Silicon). Unsigned build.</div>
+        <a class="btn btn-primary" href="hostman-1.0.0.dmg" download style="margin-bottom: 16px; align-self: flex-start;">Download .dmg (~198 MB)</a>
         <div class="codeblock"><span class="c2"># brew tap coming soon —</span><br>use the direct download above<br>for now</div>
       </div>
       <div class="install-card">
@@ -717,7 +716,7 @@
       </div>
       <div class="install-card">
         <h3>Linux</h3>
-        <div class="os-note">Any reasonably current desktop with AppImage support.</div>
+        <div class="os-note">Any current distribution supporting AppImage.</div>
         <div class="codeblock"><span class="c1">chmod</span> +x hostman.AppImage<br>./hostman.AppImage</div>
       </div>
     </div>
@@ -727,7 +726,7 @@
 <div class="wrap">
   <footer>
     <div class="statusbar">
-      <span class="ok">MIT</span>
+      <span class="ok">MIT License</span>
       <span class="sep">·</span>
       <span>© 2026 Dong H. Kim</span>
       <div class="links">

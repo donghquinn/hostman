@@ -1,10 +1,7 @@
    name: Deploy introduction site
-
    on:
      push:
        branches: [main]
-       paths:
-         - "."
      workflow_dispatch:
 
    permissions:

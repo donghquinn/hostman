@@ -8,7 +8,7 @@ the project's public front door: the introduction site and its downloadable
 release, not the application source itself.
 
 - 🔗 **Site:** [donghquinn.github.io/hostman](https://donghquinn.github.io/hostman/)
-- 💻 **Application source & docs:** [donghquinn/hostman-desktop](https://github.com/donghquinn/hostman-desktop)
+
 
 ---
 
